@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -49,6 +50,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-193" y="117"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OA9-2p-zbV">
+            <objects>
+                <viewController id="Dhi-sb-f9K" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xlL-We-7b1"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZBC-4S-tZC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SmA-NN-zyo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Un invasor del espacio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHL-Nt-R1Q">
+                                <rect key="frame" x="101" y="316" width="173" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👾" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddA-eh-qyo">
+                                <rect key="frame" x="42" y="28" width="290" height="272"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="272" id="qvG-Kq-III"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="180"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ddA-eh-qyo" firstAttribute="centerX" secondItem="KHL-Nt-R1Q" secondAttribute="centerX" id="4Gc-8C-tod"/>
+                            <constraint firstItem="ddA-eh-qyo" firstAttribute="top" secondItem="xlL-We-7b1" secondAttribute="bottom" constant="8" id="HQ8-0V-lxO"/>
+                            <constraint firstItem="ddA-eh-qyo" firstAttribute="centerX" secondItem="SmA-NN-zyo" secondAttribute="centerX" id="hYp-WT-PFf"/>
+                            <constraint firstItem="ddA-eh-qyo" firstAttribute="leading" secondItem="SmA-NN-zyo" secondAttribute="leadingMargin" constant="26" id="kGL-kP-AC0"/>
+                            <constraint firstItem="KHL-Nt-R1Q" firstAttribute="top" secondItem="ddA-eh-qyo" secondAttribute="bottom" constant="16" id="uvJ-k6-o5c"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7TO-LW-bdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="504.80000000000001" y="116.49175412293854"/>
         </scene>
     </scenes>
 </document>
