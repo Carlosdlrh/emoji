@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A315i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A315i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lsc-ZB-AGu">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -23,38 +22,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hJe-Wa-LM0">
-                                <rect key="frame" x="0.0" y="112" width="375" height="555"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emojiflix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07y-4b-jPc">
-                                <rect key="frame" x="155.5" y="57" width="63.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hJe-Wa-LM0" firstAttribute="top" secondItem="07y-4b-jPc" secondAttribute="bottom" constant="34" id="5pf-NP-wUk"/>
-                            <constraint firstItem="07y-4b-jPc" firstAttribute="centerX" secondItem="hJe-Wa-LM0" secondAttribute="centerX" id="AB8-CB-i5u"/>
-                            <constraint firstItem="07y-4b-jPc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="37" id="Cwp-oe-7bt"/>
-                            <constraint firstItem="hJe-Wa-LM0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GCQ-Qf-nUH"/>
-                            <constraint firstItem="07y-4b-jPc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LgQ-YV-Upg"/>
-                            <constraint firstItem="hJe-Wa-LM0" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="sPz-dW-mIB"/>
+                            <constraint firstItem="hJe-Wa-LM0" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="2M8-hT-gMX"/>
+                            <constraint firstItem="hJe-Wa-LM0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="72" id="414-CF-7qJ"/>
+                            <constraint firstItem="hJe-Wa-LM0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="inN-eT-IuV"/>
+                            <constraint firstAttribute="trailing" secondItem="hJe-Wa-LM0" secondAttribute="trailing" id="noq-wr-zon"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Xb3-E3-L0N"/>
                     <connections>
                         <outlet property="Tabla" destination="hJe-Wa-LM0" id="hJb-YA-rnu"/>
+                        <segue destination="Dhi-sb-f9K" kind="show" identifier="moveSegue" id="SQc-d0-8E1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-193" y="117"/>
+            <point key="canvasLocation" x="689" y="116"/>
         </scene>
-        <!--View Controller-->
+        <!--Definition View Controller-->
         <scene sceneID="OA9-2p-zbV">
             <objects>
-                <viewController id="Dhi-sb-f9K" sceneMemberID="viewController">
+                <viewController id="Dhi-sb-f9K" customClass="DefinitionViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xlL-We-7b1"/>
                         <viewControllerLayoutGuide type="bottom" id="ZBC-4S-tZC"/>
@@ -63,35 +56,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Un invasor del espacio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHL-Nt-R1Q">
-                                <rect key="frame" x="101" y="316" width="173" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="👾" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddA-eh-qyo">
+                                <rect key="frame" x="64" y="156" width="247" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="180"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👾" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddA-eh-qyo">
-                                <rect key="frame" x="42" y="28" width="290" height="272"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="272" id="qvG-Kq-III"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="180"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Un invasor del espacio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHL-Nt-R1Q">
+                                <rect key="frame" x="101" y="418" width="173" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ddA-eh-qyo" firstAttribute="centerX" secondItem="KHL-Nt-R1Q" secondAttribute="centerX" id="4Gc-8C-tod"/>
-                            <constraint firstItem="ddA-eh-qyo" firstAttribute="top" secondItem="xlL-We-7b1" secondAttribute="bottom" constant="8" id="HQ8-0V-lxO"/>
-                            <constraint firstItem="ddA-eh-qyo" firstAttribute="centerX" secondItem="SmA-NN-zyo" secondAttribute="centerX" id="hYp-WT-PFf"/>
-                            <constraint firstItem="ddA-eh-qyo" firstAttribute="leading" secondItem="SmA-NN-zyo" secondAttribute="leadingMargin" constant="26" id="kGL-kP-AC0"/>
-                            <constraint firstItem="KHL-Nt-R1Q" firstAttribute="top" secondItem="ddA-eh-qyo" secondAttribute="bottom" constant="16" id="uvJ-k6-o5c"/>
-                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="definition" destination="KHL-Nt-R1Q" id="PiA-mu-Yig"/>
+                        <outlet property="emojiLabel" destination="ddA-eh-qyo" id="xkw-rC-Z8U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7TO-LW-bdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="504.80000000000001" y="116.49175412293854"/>
+            <point key="canvasLocation" x="1591" y="116"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="p8s-uA-xhb">
+            <objects>
+                <navigationController id="lsc-ZB-AGu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FLg-x1-1Kc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fdt-4m-bi0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EkR-Yh-qNt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-194.40000000000001" y="116.49175412293854"/>
         </scene>
     </scenes>
 </document>
