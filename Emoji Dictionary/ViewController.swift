@@ -84,23 +84,41 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func makeEmojiArray() -> [Emoji]{
         let emoji1 = Emoji()
         emoji1.stringEmoji = "😀"
-        emoji1.defEmoji = "😀"
-        emoji1.category = "😀"
-        emoji1.birth = "😀"
+        emoji1.defEmoji = "Emoji Sonriente"
+        emoji1.category = "Smiley"
+        emoji1.birth = 2001
         
         let emoji2 = Emoji()
         emoji2.stringEmoji = "🤠"
         emoji2.defEmoji = "🤠"
         emoji2.category = "🤠"
-        emoji2.birth = "🤠"
+        emoji2.birth = 2011
         
         let emoji3 = Emoji()
         emoji3.stringEmoji = "😊"
-        emoji3.defEmoji = "😊"
+        emoji3.defEmoji = "Smiley feliz"
         emoji3.category = "😊"
-        emoji3.birth = "😊"
+        emoji3.birth = 2011
         
-        return [emoji1, emoji2, emoji3]
+        let emoji4 = Emoji()
+        emoji4.stringEmoji = "🇲🇽"
+        emoji4.defEmoji = "Bandera México"
+        emoji4.category = "Banderas"
+        emoji4.birth = 2011
+        
+        let emoji5 = Emoji()
+        emoji5.stringEmoji = "😎"
+        emoji5.defEmoji = "Smiley con lentes"
+        emoji5.category = "😎"
+        emoji5.birth = 2011
+        
+        let emoji6 = Emoji()
+        emoji6.stringEmoji = "🖕🏼"
+        emoji6.defEmoji = "🖕🏼"
+        emoji6.category = "🖕🏼"
+        emoji6.birth = 2011
+        
+        return [emoji1, emoji2, emoji3, emoji4, emoji5, emoji6]
     }
     
 }

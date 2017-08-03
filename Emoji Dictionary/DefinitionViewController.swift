@@ -28,7 +28,6 @@ class DefinitionViewController: UIViewController {
     var a = "Error"
     */
     var emoji = Emoji()
-    var a = "Error"
     
     
     override func viewDidLoad() {

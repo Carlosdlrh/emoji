@@ -6,11 +6,11 @@
 //  Copyright © 2017 Carlos de la Rocha. All rights reserved.
 //
 
-import Foundation
+//import Foundation
 
 class Emoji{
     var stringEmoji = ""
     var defEmoji = ""
     var category = ""
-    var birth = ""
+    var birth = 0
 }
